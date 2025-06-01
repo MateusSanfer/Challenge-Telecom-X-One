@@ -22,9 +22,9 @@ A seguir, apresentamos dois gráficos que ilustram a distribuição da variável
 - **Gráfico de Barras**: mostra a contagem absoluta de clientes que saíram (`1`) e que permaneceram (`0`).
 - **Gráfico de Pizza**: mostra a proporção percentual entre os dois grupos.
 
-| Distribuição Absoluta | Distribuição Percentual |
-|-----------------------|-------------------------|
-| ![churn_barras](img/churn_barras.png) | ![churn_pizza](img/churn_pizza.png) |
+| Distribuição Absoluta e Percentual |
+|-----------------------|
+| ![churn_barras](img/churn_barras.png) | 
 
 > 📌 Os gráficos acima revelam que cerca de **26,6% dos clientes saíram da empresa**, enquanto **73,4% permaneceram**.
 
