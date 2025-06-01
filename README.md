@@ -15,13 +15,29 @@ A empresa Telecom X está enfrentando um alto índice de cancelamentos de contra
 
 ---
 
+## 📊 Visualização da Evasão de Clientes (Churn)
+
+A seguir, apresentamos dois gráficos que ilustram a distribuição da variável `churn`, responsável por indicar se o cliente deixou ou permaneceu na empresa:
+
+- **Gráfico de Barras**: mostra a contagem absoluta de clientes que saíram (`1`) e que permaneceram (`0`).
+- **Gráfico de Pizza**: mostra a proporção percentual entre os dois grupos.
+
+| Distribuição Absoluta | Distribuição Percentual |
+|-----------------------|-------------------------|
+| ![churn_barras](img/churn_barras.png) | ![churn_pizza](img/churn_pizza.png) |
+
+> 📌 Os gráficos acima revelam que cerca de **26,6% dos clientes saíram da empresa**, enquanto **73,4% permaneceram**.
+
+---
+
 ## 🔧 Tecnologias e Ferramentas
 
 - Python 3.10+
 - Pandas
 - NumPy
-- Google Colab (ou Jupyter)
-- Matplotlib / Seaborn (para visualizações, futuramente)
+- Google Colab 
+- Matplotlib
+- Seaborn 
 
 ---
 
