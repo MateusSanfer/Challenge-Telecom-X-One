@@ -12,8 +12,30 @@ A empresa Telecom X está enfrentando um alto índice de cancelamentos de contra
 - Explorar e entender o comportamento dos clientes.
 - Identificar padrões e possíveis causas de evasão.
 - Preparar os dados para modelagens futuras e auxiliar na tomada de decisão.
+- Apoiar a empresa com **insights estratégicos** para redução da evasão.
+  
+---
+
+## 🧹 Limpeza e Tratamento de Dados
+
+As principais etapas de preparação dos dados incluíram:
+
+- ✅ Importação e normalização de um arquivo JSON estruturado por API.
+- ✅ Separação de campos aninhados em colunas planas.
+- ✅ Remoção de registros com valores ausentes em colunas críticas.
+- ✅ Padronização de colunas e conversão de variáveis binárias ("Yes"/"No" → 1/0).
+- ✅ Criação da variável `contas_diarias`, baseada na fatura mensal.
 
 ---
+
+## 🔍 Análise Exploratória de Dados (EDA)
+
+A análise exploratória revelou importantes padrões de comportamento entre os clientes.
+
+### 📌 Distribuição Geral do Churn
+
+- **26,6% dos clientes** cancelaram seus serviços.
+- Gráficos de barras e pizza foram utilizados para visualizar a proporção de churn.
 
 ## 📊 Visualização da Evasão de Clientes (Churn)
 
@@ -27,6 +49,44 @@ A seguir, apresentamos dois gráficos que ilustram a distribuição da variável
 | ![churn_barras](img/churn_barras.png) | 
 
 > 📌 Os gráficos acima revelam que cerca de **26,6% dos clientes saíram da empresa**, enquanto **73,4% permaneceram**.
+
+---
+
+### 📌 Churn por Variáveis Categóricas
+
+- Clientes com **contrato mensal** apresentam **alta taxa de churn**.
+- A forma de pagamento **"Electronic Check"** está fortemente ligada à evasão.
+- Clientes que **não utilizam serviços extras** (como suporte técnico ou backup) evadem mais.
+
+Visualizações com **Plotly** e análise de **proporção por grupo** foram aplicadas.
+
+### 📌 Churn por Variáveis Numéricas
+
+As principais variáveis analisadas foram:
+
+- `tenure`: clientes com pouco tempo de casa saem mais.
+- `monthly_charges`: faturas mais altas correlacionam com maior churn.
+- `total_charges`: quanto menor o gasto total, maior a probabilidade de evasão.
+- `contas_diarias`: estimativa de gasto médio por dia.
+
+Foram usados **histogramas e boxplots** para comparar a distribuição entre clientes que ficaram e os que saíram.
+
+---
+
+## 💡 Principais Insights
+
+- Clientes que **acabaram de entrar** na empresa são os que mais cancelam.
+- Contratos **mensais** e **pagamento eletrônico** (via boleto) são os grupos mais vulneráveis.
+- Clientes que **pagam mais e usam menos serviços extras** apresentam maior risco de churn.
+
+---
+
+## ✅ Recomendações
+
+- Oferecer **incentivos para contratos de longo prazo**.
+- Estimular o uso de serviços complementares.
+- Adotar formas de pagamento automáticas (como débito ou cartão).
+- Focar nos **primeiros meses do cliente**, com ações proativas de engajamento.
 
 ---
 
@@ -65,13 +125,13 @@ O dataset inclui colunas como:
 ---
 
 ## ✍️ Autor
-
-Desenvolvido por [Mateus Sanfer - https://github.com/MateusSanfer] como parte de um desafio de análise de dados.
+Como parte de um desafio de análise de dados. Desenvolvido por 
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/126841158?v=4" width=115><br><sub>Mateus Sanfer</sub>](https://github.com/MateusSanfer) |
+| :---: |
 
 ---
 
-## 📌 Observações
+## 📝 Licença
 
-- Os dados utilizados são fictícios e disponibilizados para fins educacionais.
-- O projeto está em construção e será atualizado conforme as etapas forem avançando.
-
+Este projeto foi desenvolvido apenas para fins educacionais com dados fictícios.  
+Distribuído livremente sob a [MIT License](LICENSE).
