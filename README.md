@@ -97,7 +97,8 @@ Foram usados **histogramas e boxplots** para comparar a distribuição entre cli
 - NumPy
 - Google Colab 
 - Matplotlib
-- Seaborn 
+- Seaborn
+- Plotly
 
 ---
 
